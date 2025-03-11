@@ -38,7 +38,7 @@ If($amigendrv64_URL -eq "")
 	}	
 
 $ComputerName = $env:computername			
-If($TXT -ne $null)
+If($TXT -ne "")
 	{
 		$Exported_Config_BIOS = $TXT
 	}	
