@@ -24,9 +24,6 @@ If you want to use iSetupCfgWin64.exe and amigendrv64.sys from a blob storage:
 $iSetupCfg_URL = ""
 $amigendrv64_URL = ""
 
-$iSetupCfg_URL = "https://stagrtdwpprddevices.blob.core.windows.net/nuc-asus/iSetupCfgWin64.exe"
-$amigendrv64_URL = "https://stagrtdwpprddevices.blob.core.windows.net/nuc-asus/amigendrv64.sys"	
-
 If($iSetupCfg_URL -eq "")
 	{
 		$iSetupCfg_URL = $iSetupCfg_URL_FromGitHub
