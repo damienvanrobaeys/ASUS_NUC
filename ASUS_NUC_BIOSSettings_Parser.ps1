@@ -20,8 +20,11 @@ If you want to use iSetupCfgWin64.exe and amigendrv64.sys from a blob storage:
 #>
 
 $Global:Current_Folder = split-path $MyInvocation.MyCommand.Path
-$iSetupCfg_URL = "https://stagrtdwpprddevices.blob.core.windows.net/nuc-asus/iSetupCfgWin64.exe"
-$amigendrv64_URL = "https://stagrtdwpprddevices.blob.core.windows.net/nuc-asus/amigendrv64.sys"	
+$iSetupCfg_URL = ""
+$amigendrv64_URL = ""	
+
+$iSetupCfg_URL_FromGitHub = "https://github.com/damienvanrobaeys/ASUS_NUC/blob/main/iSetupCfgWin64.exe"
+$amigendrv64_URL_FromGitHub = "https://github.com/damienvanrobaeys/ASUS_NUC/blob/main/amigendrv64.sys"
 
 If($ImportConfig -ne "") 
 	{
